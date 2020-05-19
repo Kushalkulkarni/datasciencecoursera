@@ -1,6 +1,6 @@
 rankall <- function(condition, rank = "best") {
         outcome_dt <- read.csv("C:/Users/Admin/Desktop/R Course/Assignment 3/outcome-of-care-measures.csv", 
-                               na.strings = "Not Available", stringsAsFactors = FALSE)
+                               na.strings = "Not Available", stringsAsFactors = FALSE) #NotAvailable > NA
         outcome_less <- outcome_dt[, c(2, 7, 11, 17, 23)]
         conditions <- c('heart attack'=3, 'heart failure'=4, 'pneumonia'=5)
         #Checking validity of the arguments
